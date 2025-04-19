@@ -1,5 +1,5 @@
 //slide background image
-const images = ['home.png', 'bg.png', '/place.png','cafee.png'];
+const images = ['home.png', 'bg.png','place.png','cafee.png'];
 let currentImageIndex = 0;
 const heroSection = document.querySelector('.hero');
 function updateBackground()
@@ -16,7 +16,6 @@ document.getElementById('next').addEventListener('click', () => {
 });
 // Initialize the background image
 updateBackground();
-
 
 /* toggle menu */
 document.getElementById('hamburger').addEventListener('click', function () {
