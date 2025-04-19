@@ -45,13 +45,11 @@ document.getElementById('hamburger').addEventListener('click', function () {
         document.getElementById('contactForm').reset(); // Reset form fields
     });
 
+// Form Submission (Optional: Can integrate with a backend)
+     document.getElementById('feedbackform').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form from refreshing
+        alert("Thank you! Your message has been sent.");
+        document.getElementById('feedbackform').reset(); // Reset form fields
+    });
 
-      function openOrderForm(name, price) {
-        document.getElementById("itemName").value = name;
-        document.getElementById("itemPrice").value = price;
-        document.getElementById("orderPopup").style.display = "block";
-      }
       
-      function closeOrderForm() {
-        document.getElementById("orderPopup").style.display = "none";
-      }
